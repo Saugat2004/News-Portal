@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1 class="logo">📰 News Portal</h1>
             <div class="nav-links">
                 <span class="welcome">Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?> (admin)</span>
-                <a href="news.php" class="back-btn">Back to News</a>
+                <a href="index.php" class="back-btn">Back to News</a>
                 <a href="logout.php" class="logout-btn">Logout</a>
             </div>
         </div>

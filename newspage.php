@@ -32,7 +32,7 @@ $banner = !empty($article['banner_image']) ? $article['banner_image'] : 'https:/
         <div class="nav-container">
             <h1 class="logo">📰 News Portal</h1>
             <div class="nav-links">
-                <a href="news.php" class="back-btn">Back to News</a>
+                <a href="index.php" class="back-btn">Back to News</a>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <span class="welcome">Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?> (<?php echo htmlspecialchars($_SESSION['user_role'] ?? 'user'); ?>)</span>
                     <?php if (($_SESSION['user_role'] ?? 'user') === 'admin'): ?>
@@ -41,7 +41,7 @@ $banner = !empty($article['banner_image']) ? $article['banner_image'] : 'https:/
                     <?php endif; ?>
                     <a href="logout.php" class="logout-btn">Logout</a>
                 <?php else: ?>
-                    <a href="index.php" class="back-btn">Login</a>
+                    <a href="login.php" class="back-btn">Login</a>
                     <a href="register.php" class="back-btn">Register</a>
                 <?php endif; ?>
             </div>
