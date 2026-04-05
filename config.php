@@ -1,20 +1,20 @@
 <?php
-// Database configuration
+
 $host = 'localhost';
 $db = 'news-portal';
 $user = 'root';
 $pass = '';
 
 try {
-    // PHP Data Objects (PDO) connection
+
     $pdo = new PDO("mysql:host=$host", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    // Create database if not exists
+
+
     $pdo->exec("CREATE DATABASE IF NOT EXISTS `$db`");
     $pdo->exec("USE `$db`");
-    
-    // Create sessions table
+
+
     $pdo->exec("CREATE TABLE IF NOT EXISTS users (
         id INT PRIMARY KEY AUTO_INCREMENT,
         fullname VARCHAR(255) NOT NULL,
@@ -25,10 +25,8 @@ try {
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // Session => stores the data required for the app after logging in
-    // Session is an array  
 
-    // Create news table
+
     $pdo->exec("CREATE TABLE IF NOT EXISTS news (
         id INT PRIMARY KEY AUTO_INCREMENT,
         title VARCHAR(255) NOT NULL,
@@ -41,10 +39,9 @@ try {
     )");
 
 
-} catch(PDOException $e) {
+} catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
 
 session_start();
 ?>
-
