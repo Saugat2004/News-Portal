@@ -8,7 +8,7 @@ try {
             'description' => 'Latest updates in tech industry',
             'content' => 'The technology sector is experiencing unprecedented growth. New innovations are being released every day that are changing how we live and work. Artificial Intelligence, blockchain, and quantum computing are at the forefront of this revolution.',
             'author' => 'Admin',
-            'banner_image' => 'https://images.unsplash.com/photo-1773332585754-f1436987743b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            'banner_image' => 'https://images.unsplash.com/photo-1536412597336-ade7b523ecfc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D'
         ],
         [
             'title' => 'Sports: Championship Finals',
@@ -22,14 +22,14 @@ try {
             'description' => 'Stock markets show positive growth',
             'content' => 'Global markets are showing strong performance with major indices reaching new highs. Investors are optimistic about economic recovery and future growth prospects. Trading volumes have increased significantly.',
             'author' => 'Finance Team',
-            'banner_image' => 'https://images.unsplash.com/photo-1556740772-1a741367b93e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            'banner_image' => 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM2fHxidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D'
         ],
         [
             'title' => 'Health: New Medical Breakthrough',
             'description' => 'Scientists discover new treatment methods',
             'content' => 'Recent research has led to groundbreaking discoveries in medical science. New treatment protocols are showing high success rates in clinical trials. Medical professionals are excited about the potential to save more lives.',
             'author' => 'Health Correspondent',
-            'banner_image' => 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            'banner_image' => 'https://plus.unsplash.com/premium_photo-1673958772257-86d8cddec7dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxtZWRpY2FsfGVufDB8fDB8fHww'
         ],
         [
             'title' => 'Environment: Climate Action Steps',

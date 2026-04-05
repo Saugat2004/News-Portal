@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 $host = 'localhost';
-$db = 'news_portal';
-$user = 'phpmyadmin';
-$pass = '12345';
+$db = 'news-portal';
+$user = 'root';
+$pass = '';
 
 try {
     // PHP Data Objects (PDO) connection
