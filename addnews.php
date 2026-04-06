@@ -22,8 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             $stmt = $pdo->prepare("INSERT INTO news (title, description, content, banner_image, author) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([$title, $description, $content, $banner_image, $author]);
-            header('Location: news.php');
-            exit;
+            if (!headers_sent()) {
+                header('Location: index.php');
+                exit;
+            }
         } catch (PDOException $e) {
             $error = 'Failed to add news.';
         }
@@ -32,16 +34,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Add News | News Portal</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">📰 News Portal</h1>
+            <h1 class="logo">📰 News Nest</h1>
             <div class="nav-links">
                 <span class="welcome">Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?> (admin)</span>
                 <a href="index.php" class="back-btn">Back to News</a>
@@ -71,7 +75,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="input-group">
                     <label for="banner_image">Banner Image URL (optional)</label>
-                    <input type="url" id="banner_image" name="banner_image" placeholder="https://example.com/banner.jpg">
+                    <input type="url" id="banner_image" name="banner_image"
+                        placeholder="https://example.com/banner.jpg">
                 </div>
                 <div class="input-group">
                     <label for="content">Content</label>
@@ -82,4 +87,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 </body>
+
 </html>

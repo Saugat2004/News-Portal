@@ -30,7 +30,7 @@ $banner = !empty($article['banner_image']) ? $article['banner_image'] : 'https:/
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">📰 News Portal</h1>
+            <h1 class="logo">📰 News Nest</h1>
             <div class="nav-links">
                 <a href="index.php" class="back-btn">Back to News</a>
                 <?php if (isset($_SESSION['user_id'])): ?>

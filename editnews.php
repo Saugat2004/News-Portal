@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">📰 News Portal</h1>
+            <h1 class="logo">📰 News Nest</h1>
             <div class="nav-links">
                 <span class="welcome">Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?> (admin)</span>
                 <a href="newspage.php?id=<?php echo $id; ?>" class="back-btn">Back to Article</a>

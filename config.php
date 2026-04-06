@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$db = 'news-portal';
+$db = 'newsnest';
 $user = 'root';
 $pass = '';
 
